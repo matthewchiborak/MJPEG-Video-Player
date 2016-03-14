@@ -1,0 +1,9 @@
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\bin\Debug\SE3314Assignment2Client.exe.config
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\obj\Debug\SE3314Assignment2Client.exe
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\obj\Debug\SE3314Assignment2Client.pdb
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\bin\Debug\SE3314Assignment2Client.exe
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\bin\Debug\SE3314Assignment2Client.pdb
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\obj\Debug\SE3314Assignment2Client.csprojResolveAssemblyReference.cache
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\obj\Debug\SE3314Assignment2Client.Form1.resources
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\obj\Debug\SE3314Assignment2Client.Properties.Resources.resources
+C:\Users\Chiborak\Documents\Visual Studio 2015\Projects\SE3314Assignment2Client\SE3314Assignment2Client\obj\Debug\SE3314Assignment2Client.csproj.GenerateResource.Cache
