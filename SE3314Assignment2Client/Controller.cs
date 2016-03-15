@@ -110,12 +110,17 @@ namespace SE3314Assignment2Client
                     Graphics myGraphic = Graphics.FromImage(resizedFrame);
                     int lastFrameInc = videoBoxWidth / 4;
 
+                    try {
+                        myGraphic.DrawImage(resizedFrame, 0, 0); //new rect
+                        myGraphic.DrawImage(setupIcon, 0, 0);
+                        myGraphic.DrawImage(playIcon, lastFrameInc, 0);
+                        myGraphic.DrawImage(pauseIcon, lastFrameInc * 2, 0);
+                        myGraphic.DrawImage(teardownIcon, lastFrameInc * 3, 0);
+                    }
+                    catch(Exception e)
+                    {
 
-                    myGraphic.DrawImage(resizedFrame, 0, 0); //new rect
-                    myGraphic.DrawImage(setupIcon, 0, 0);
-                    myGraphic.DrawImage(playIcon, lastFrameInc, 0);
-                    myGraphic.DrawImage(pauseIcon, lastFrameInc * 2, 0);
-                    myGraphic.DrawImage(teardownIcon, lastFrameInc * 3, 0);
+                    }
 
 
                     _view.postFrame(resizedFrame);

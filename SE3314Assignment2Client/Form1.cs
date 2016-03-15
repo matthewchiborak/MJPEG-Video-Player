@@ -166,7 +166,13 @@ namespace SE3314Assignment2Client
             else
             {
                 //Resize the frame then put it on screen
-                videoBox.Image = new Bitmap(nextFrame, new Size(videoWidth, videoHeight));
+                try {
+                    videoBox.Image = new Bitmap(nextFrame, new Size(videoWidth, videoHeight));
+                }
+                catch(Exception e)
+                {
+                    
+                }
                 
             }
             
