@@ -160,6 +160,7 @@ namespace SE3314Assignment2Client
         //These for function cause sending rtsp commands to the server
         public void setup()
         {
+            _view.addToStatus("RTSP Request: SETUP");
             _RTSPModel.sendMessage("setup", videoName, frameReceiverPortNumber);
             
             _view.addToRequest(((RTSPmodel)_RTSPModel).getLastServerResponse());
@@ -167,18 +168,21 @@ namespace SE3314Assignment2Client
         }
         public void play()
         {
+            _view.addToStatus("RTSP Request: PLAY");
             _RTSPModel.sendMessage("play", videoName, frameReceiverPortNumber);
             _view.addToRequest(((RTSPmodel)_RTSPModel).getLastServerResponse());
          
         }
         public void pause()
         {
+            _view.addToStatus("RTSP Request: PAUSE");
             _RTSPModel.sendMessage("pause", videoName, frameReceiverPortNumber);
             _view.addToRequest(((RTSPmodel)_RTSPModel).getLastServerResponse());
             
         }
         public void teardown()
         {
+            _view.addToStatus("RTSP Request: TEARDOWN");
             _RTSPModel.sendMessage("teardown", videoName, frameReceiverPortNumber);
             _view.addToRequest(((RTSPmodel)_RTSPModel).getLastServerResponse());
             
