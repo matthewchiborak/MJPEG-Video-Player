@@ -109,15 +109,16 @@ namespace SE3314Assignment2Client
                     Image resizedFrame = new Bitmap(lastFrame, new Size(videoBoxWidth, videoBoxHeight));
                     Graphics myGraphic = Graphics.FromImage(resizedFrame);
                     int lastFrameInc = videoBoxWidth / 4;
+                    int offset = lastFrameInc / 4;
 
                     try {
                         myGraphic.DrawImage(resizedFrame, 0, 0); //new rect
-                        myGraphic.DrawImage(setupIcon, 0, 0);
-                        myGraphic.DrawImage(playIcon, lastFrameInc, 0);
-                        myGraphic.DrawImage(pauseIcon, lastFrameInc * 2, 0);
-                        myGraphic.DrawImage(teardownIcon, lastFrameInc * 3, 0);
+                        myGraphic.DrawImage(setupIcon, offset, 0);
+                        myGraphic.DrawImage(playIcon, lastFrameInc + offset, 0);
+                        myGraphic.DrawImage(pauseIcon, lastFrameInc * 2 + offset, 0);
+                        myGraphic.DrawImage(teardownIcon, lastFrameInc * 3 + offset, 0);
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
 
                     }
@@ -138,14 +139,13 @@ namespace SE3314Assignment2Client
             Image resizedFrame = new Bitmap(lastFrame, new Size(width, height));
             Graphics myGraphic = Graphics.FromImage(resizedFrame);
             int lastFrameInc = width / 4;
-            
+            int offset = lastFrameInc / 4;
 
             myGraphic.DrawImage(resizedFrame, 0, 0); //new rect
-            myGraphic.DrawImage(setupIcon, 0, 0);
-            myGraphic.DrawImage(playIcon, lastFrameInc, 0);
-            myGraphic.DrawImage(pauseIcon, lastFrameInc * 2, 0);
-            myGraphic.DrawImage(teardownIcon, lastFrameInc * 3, 0);
-
+            myGraphic.DrawImage(setupIcon, offset, 0);
+            myGraphic.DrawImage(playIcon, lastFrameInc + offset, 0);
+            myGraphic.DrawImage(pauseIcon, lastFrameInc * 2 + offset, 0);
+            myGraphic.DrawImage(teardownIcon, lastFrameInc * 3 + offset, 0);
 
             _view.postFrame(resizedFrame);
         }
